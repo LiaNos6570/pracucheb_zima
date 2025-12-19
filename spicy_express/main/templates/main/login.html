@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Spicy Express{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/restaurants.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="{% static 'images/logo.png' %}" alt="Spicy Express">
+            <div class="header-navigation">
+                <div class="header-navigation_1">
+                    <a href="{% url 'menu' %}" id="head_fat">Меню</a>
+                    <a href="{% url 'promotions' %}">Акции</a>
+                    <a href="{% url 'restaurants' %}">Рестораны</a>
+                </div>
+                <div class="header-navigation_1">
+                    <a href="{% url 'jobs' %}">Работа</a>
+                    <a href="{% url 'account' %}">Личный кабинет</a>
+                    <a href="{% url 'main_page' %}" id="head_fat">Главная</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="display: flex; flex-direction: column;">
+        <h1>Вход</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Войти</button>
+        </form>
+        <p>Нет аккаунта? <a href="{% url 'register' %}">Зарегистрируйтесь</a></p>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>Компания</h4>
+                <a href="#">Бизнес с Spicy Express</a>
+                <a href="#">Политика обработки и защиты ПДн</a>
+                <a href="#">О компании</a>
+                <a href="{% url 'question_list' %}">Вопросы и ответы</a>
+            </div>
+            <div>
+                <h4>Карьера</h4>
+                <a href="#">Университет</a>
+                <a href="#">Вакансии</a>
+            </div>
+            <div>
+                <H1>Spicy<br>
+                    Express</H1>
+            </div>
+            <div>
+                <h4>Мы рядом</h4>
+                <a href="https://vk.com/pampers_42">ВКонтакте</a>
+                <a href="https://t.me/lnbeats">Telegram</a>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <a href="{% url 'feedback_form' %}">Форма обратной связи</a>
+                <p>Почта для СМИ</p>
+                <p>Телефон горячей линии: +79001118855</p>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 20px;">&copy; 2024 Все права защищены</p>
+    </footer>
+</body>
+
+</html>

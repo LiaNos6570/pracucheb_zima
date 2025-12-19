@@ -1,0 +1,343 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Express</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="{% static 'images/logo.png' %}" alt="Spicy Express">
+            <div class="header-navigation">
+                <div class="header-navigation_1">
+                    <a href="{% url 'menu' %}" id="head_fat">Меню</a>
+                    <a href="{% url 'promotions' %}">Акции</a>
+                    <a href="{% url 'restaurants' %}">Рестораны</a>
+                </div>
+                <div class="header-navigation_1">
+                    <a href="{% url 'jobs' %}">Работа</a>
+                    <a href="{% url 'account' %}">Личный кабинет</a>
+                    <a href="{% url 'main_page' %}" id="head_fat">Главная</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            Здесь будет баннер с акциями
+        </div>
+
+        <div class="menu" id="menu">
+
+            <div class="dop_menu">
+                <h2>Наше меню</h2>
+                <div class="menu_categories">
+
+                </div>
+            </div>
+
+
+
+            <div class="categories">
+
+
+                <div class="menu_blocks_1">
+
+                    <a id="low">Low Spicy</a>
+
+                    <div class="low_s_items">
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="{% static 'images/20 Minute Spicy Thai Noodles 1(1).png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>3.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/Sweet and Spicy Baked Popcorn Chicken 2.png' %}"
+                                    alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>4.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/изображение 2(1).png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>3.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/1b2be9860739331efb6c1f3b592d826b.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>3.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/yqgibhfuj1zdmzbujzaosx99iv55 2.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>2.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/alwypfe7q55jok6a1k03l45pok3v.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>2.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="menu_blocks_2">
+
+                    <a id="normal">Normal Spicy</a>
+
+                    <div class="low_s_items">
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="{% static 'images/lox4smd8dz8511w7yvzp1ly5lkeg 1.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>3.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/02f6f8b83e6e461301891ebb4aed8d67.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>4.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/p6j3joelyq45u8108booktf7998k 1.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>3.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/oknflwn7wblv5degvwceze9ja7q3 1.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>3.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/17rpij41zfo5cbx7kwmxurzknq5f 1.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>2.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/24628305a966144576272740d04c7caf.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>2.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_blocks_3">
+                    <a id="extra">Extra Spicy</a>
+                    <div class="low_s_items">
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="{% static 'images/24628305a966144576272740d04c7caf.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>3.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/bbab31013cd2e2b3d5e8e994ab7a30f6.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>4.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/133e45bd65a62bee1a3d5401d5dae874.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>3.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/9849bc9299d6da543905461d7101b5a9.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>3.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/8f25f707ac50afca80b1adfbb071e97b.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>2.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="{% static 'images/015611682383963d50c07d84d861c132.png' %}" alt="Spicy Chicken Noodles">
+                                <h3>Spicy Chicken Noodles</h3>
+                                <div>
+                                    <div class="p_text">
+                                        <p>2.99$</p>
+                                    </div>
+                                    <div class="tov_butt">
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>Компания</h4>
+                <a href="#">Бизнес с Spicy Express</a>
+                <a href="#">Политика обработки и защиты ПДн</a>
+                <a href="#">О компании</a>
+                <a href="{% url 'question_list' %}">Вопросы и ответы</a>
+            </div>
+            <div>
+                <h4>Карьера</h4>
+                <a href="#">Университет</a>
+                <a href="#">Вакансии</a>
+            </div>
+            <div>
+                <H1>Spicy<br>
+                    Express</H1>
+            </div>
+            <div>
+                <h4>Мы рядом</h4>
+                <a href="https://vk.com/pampers_42">ВКонтакте</a>
+                <a href="https://t.me/lnbeats">Telegram</a>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <a href="{% url 'feedback_form' %}">Форма обратной связи</a>
+                <p>Почта для СМИ</p>
+                <p>Телефон горячей линии: +79001118855</p>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 20px;">&copy; 2024 Все права защищены</p>
+    </footer>
+</body>
+
+</html>
